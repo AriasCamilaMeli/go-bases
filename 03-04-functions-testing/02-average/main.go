@@ -9,7 +9,7 @@ import (
 	"fmt"
 )
 
-func average(grades ...int) (float64, error) {
+func Average(grades ...int) (float64, error) {
 	if len(grades) == 0 {
 		return 0, errors.New("no grades provided")
 	}
@@ -27,7 +27,7 @@ func average(grades ...int) (float64, error) {
 
 func main() {
 	grades := []int{85, 90, 78, 92, 88}
-	avg, err := average(grades...)
+	avg, err := Average(grades...)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return

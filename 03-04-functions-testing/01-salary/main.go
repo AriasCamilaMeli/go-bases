@@ -14,7 +14,7 @@ func TaxSalary(salary float64) (tax float64) {
 	} else if salary > 50000 {
 		return salary * 0.17
 	}
-	return salary
+	return 0
 }
 
 func main() {

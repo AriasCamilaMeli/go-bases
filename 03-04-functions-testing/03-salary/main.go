@@ -12,7 +12,7 @@ package main
 
 import "fmt"
 
-func calculateSalary(minutesWorked int, category string) float64 {
+func CalculateSalary(minutesWorked int, category string) float64 {
 	hoursWorked := float64(minutesWorked) / 60
 	var hourlyRate float64
 	var bonusPercentage float64
@@ -42,6 +42,6 @@ func main() {
 	minutesWorked := 9600
 	category := "A"
 
-	salary := calculateSalary(minutesWorked, category)
+	salary := CalculateSalary(minutesWorked, category)
 	fmt.Printf("The salary for category %s with %d minutes worked is: $%.2f\n", category, minutesWorked, salary)
 }
